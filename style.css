@@ -4,13 +4,7 @@
     --violet-color: #79589F;
     --dark-violet:#260040;
     --white-color: #fff;
-    --primary-color: #79589F;
-    --secondary-color: #6e5baa;
-    --dark-color: #260040;
-    --light-color: #f4f4f4;
     --shadow-color: 0 3px 10px rgba(0, 0, 0, 0.3);
-    --text-color: #333;
-
 }
 /*Global setting*/
 * {
@@ -447,35 +441,35 @@ input:focus {
 }
 
 /*Background*/
-.bg-primary, .btn-primary {
-  background-color: var(--primary-color);
+.bg-primary, .button-primary {
+  background-color: var(--violet-color);
   color: #fff;
 }
-.bg-secondary, .btn-secondary {
-  background-color: var(--secondary-color);
+.bg-secondary, .button-secondary {
+  background-color: var(--violet-color);
   color: #fff;
 }
 
-.bg-dark, .btn-dark {
-  background-color: var(--dark-color);
+.bg-dark, .button-dark {
+  background-color: var(--dark-violet);
   color: #fff;
 }
-.bg-light, .btn-light {
-  background-color: var(--light-color);
+.bg-light, .button-light {
+  background-color: var(--white-color);
   color: #333;
 }
 /*Text color*/
 .text-primary {
-  color: var(--primary-color);
+  color: var(--violet-color);
 }
 .text-secondary {
-  color: var(--secondary-color);
+  color: var(--violet-color);
 }
 .text-dark {
-  color: var(--dark-color);
+  color: var(--dark-violet);
 }
 .text-light {
-  color: var(--light-color);
+  color: var(--white-color);
 }
 /*Font size*/
 .lead {

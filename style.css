@@ -3,7 +3,7 @@
 :root {
     --violet-color: #79589F;
     --dark-violet:#260040;
-    --white-color: #fff;
+    --white-color: #f4f4f4;
     --shadow-color: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 /*Global setting*/
@@ -156,7 +156,10 @@ input:focus {
     border: none;
     border-radius: 5px;
 }
-.button-outline {
+.readmore{
+    background-color: var(--dark-violet);
+}
+.read {
     border: 1px solid #fff;
 }
 
@@ -188,7 +191,7 @@ input:focus {
 
 .stats-heading {
     max-width: 500px;
-    margin:auto
+    margin: 1rem auto;
 }
 .text-center {
     text-align: center;
@@ -218,6 +221,12 @@ input:focus {
 }
 
 /* Cloud */
+.cloud{
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    background-color: var(--violet-color);
+    color: #fff;
+}
 .cloud .grid {
     grid-template-columns: 4fr 3fr; 
 }
@@ -241,14 +250,25 @@ input:focus {
     margin-bottom: 10px;
 }
 /* Features */
+.features-head{
+    padding: 2rem 0;
+    background-color: var(--violet-color);
+    color: #fff;
+}
 .features-head img {
     width: 200px;
     justify-self: flex-end; 
 }
-
-.features-sub-head img {
+.seytech{
+    padding: 2rem 0;
+    background-color: var(--white-color);
+}
+.seytech img {
     width: 300px;
     justify-self: flex-end; 
+}
+.features-main{
+    margin: 1.5rem 0;
 }
 .features-main .grid  {
     padding: 30px;
@@ -264,6 +284,11 @@ input:focus {
      margin-right: 20px;
  }
 /* Footer */
+.footer{
+    background-color: var(--dark-violet);
+    color: #fff;
+    padding: 4rem 0;
+}
 .footer a {
     color: #fff;
 }
@@ -297,7 +322,7 @@ input:focus {
     }
 }
 /*Adaptive*/
-/*Mobile*/
+/*Tablet*/
 @media (max-width: 768px) {
     .grid, 
     .showcase .grid,
@@ -311,177 +336,62 @@ input:focus {
     .showcase {
         height: auto;
     }
-
     .showcase-text {
         text-align: center;
         margin-top: 40px;
     }
-
     .showcase-form {
         margin: auto;
         justify-self: center;
     }
-
-    .cli .grid > *:first-child {
+    .cli .grid{
         grid-column: 1; 
         grid-row: 1;
     }
-
-    .features-head, .features-sub-head {
+    .features-head, .seytech {
         text-align: center;
     }
-
     .features-head img, 
-    .features-sub-head img{
+    .seytech img{
         justify-self: center;
     }
-
-    .features-main .grid  > *:first-child, 
-    .features-main .grid  > *:nth-child(2) {
+    .features-main .grid,
+    .features-main .grid{
         grid-column: 1;
         grid-row: 1;
     }
-     
-
 }
 /*Mobile*/
 @media (max-width: 350px) {
-    .navbar {
+    .nav {
         height: 110px;
     }
 
-    .navbar .flex {
+    .nav .flex {
         flex-direction: column;
     }
 
-    .navbar ul {
+    .nav ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.2);
     }
-
     .showcase-form {
         width: 300px;
     }
 }
-/* Margin */
-.my-1 { 
-    margin: 1rem auto;
-}
-.my-2 {
-    margin: 1.5rem 0;
-}
-.my-3 {
-    margin: 2rem 0;
-}
-.my-4 {
-    margin: 3rem 0;
-}
-.my-5 {
-    margin: 4rem 0;
-}
-.m-1 {
-    margin: 1rem;
-}
-
-.m-2 {
-  margin: 1.5rem;
-}
-
-.m-3 {
-  margin: 2rem;
-}
-
-.m-4 {
-  margin: 3rem;
-}
-
-.m-5 {
-  margin: 4rem;
-}
-
-/* Padding */
-.py-1 {
-    padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 1.5rem 0;
-}
-
-.py-3 {
-  padding: 2rem 0;
-}
-
-.py-4 {
-  padding: 3rem 0;
-}
-
-.py-5 {
-  padding: 4rem 0;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 1.5rem;
-}
-  
-.p-3 {
-  padding: 2rem;
-}
-
-.p-4 {
-  padding: 3rem;
-}
-
-.p-5 {
-  padding: 4rem;
-}
-
-/*Background*/
-.bg-primary, .button-primary {
-  background-color: var(--violet-color);
-  color: #fff;
-}
-.bg-secondary, .button-secondary {
-  background-color: var(--violet-color);
-  color: #fff;
-}
-
-.bg-dark, .button-dark {
-  background-color: var(--dark-violet);
-  color: #fff;
-}
-.bg-light, .button-light {
-  background-color: var(--white-color);
-  color: #333;
-}
 /*Text color*/
-.text-primary {
+.p-text{
   color: var(--violet-color);
-}
-.text-secondary {
-  color: var(--violet-color);
-}
-.text-dark {
-  color: var(--dark-violet);
-}
-.text-light {
-  color: var(--white-color);
 }
 /*Font size*/
-.lead {
+.build {
   font-size: 20px;
+  margin: 1rem auto;
 }
-
-.sm {
-  font-size: 1rem;
-}
-.md {
+.languages {
+    margin: 1.5rem 0;
   font-size: 2rem;
 }
-.lg {
+.extreme {
   font-size: 3rem;
 }

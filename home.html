@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Connecning google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400&family=Dosis:wght@500&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat&display=swap" rel="stylesheet">
     <!--Connection icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--Connection CSS-->
@@ -25,7 +29,7 @@
         </div>
     </div>
     <!--Easier Deployment-->
-    <section class="showcase">
+    <header class="header-home">
         <div class="container grid">
             <div class="easier">
                 <h1>Easier Deployment</h1>
@@ -36,19 +40,19 @@
                 <h2>Request a Demo</h2>
                 <form action="">
                     <div class="inputs">
-                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Name" class="input" required>
                     </div>
                     <div class="inputs">
-                        <input type="text" name="company" placeholder="Company Name" required>
+                        <input type="text" name="company" placeholder="Company Name" class="input" required>
                     </div>
                     <div class="inputs">
-                        <input type="email" name="email" placeholder="Emai" required>
+                        <input type="email" name="email" placeholder="Emai" class="input" required>
                     </div>
                     <input type="submit" value="Send" class="button">
                 </form>
             </div>
         </div>
-    </section>
+    </header>
     <!-- Stats -->
     <section class="stats">
         <div class="container">
@@ -76,11 +80,11 @@
     <section class="shadow-buttons">
         <div class="container grid">
             <img src="image.png" alt="">
-            <div class="card">
+            <div class="icon">
                 <h3>Easy to use, cross platform CLI</h3>
             </div>
             <img src="image.png" alt="">
-            <div class="card">
+            <div class="icon">
                 <h3>Deploy in seconds</h3>
             </div>
         </div>
@@ -99,32 +103,32 @@
     <section class="languages">
         <h2 class="text-center">Supported Languages</h2>
         <div class="container flex">
-            <div class="card">
+            <div class="icon">
                 <h4>Node.js</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>Python</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>C#</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>Ruby</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>PHP</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>Scala</h4>
             </div>
-            <div class="card">
+            <div class="icon">
                 <h4>Closure</h4>
             </div>
         </div>
     </section>
     <!--Footer-->
     <footer class="footer bg-dark">
-        <div class="container grid grid-3">
+        <div class="container grid three-columns">
             <div>
                 <h1>Sayatech</h1>
                 <p>Copyright &copy; 2021</p>

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 /*Root*/
 :root {
-    --violet-color: rgb(119, 58, 149);
+    --violet-color: rgb(117, 84, 134);
     --dark-violet: rgb(37, 27, 42);
     --white-color: #ffff;
     --shadow-color: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -157,7 +157,7 @@ img {
     border-bottom: 1px solid  #b1b1b1;
     width: 100%;
     padding: 2px;
-    font-size: 1rem;
+    font-size: 20px;
     background-color: var(--white-color);
     color: darkgray;
 } 
@@ -259,7 +259,7 @@ img {
     justify-self: flex-end; 
 }
 .sayatech{
-    padding: 2rem 0;
+    padding: 30px 0;
     background-color: var(--white-color);
 }
 .sayatech img {
